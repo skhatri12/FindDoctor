@@ -6,6 +6,7 @@
 .herosectionInnerWrapper {
   padding: 80px 40px 10px 50px;
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .leftheroWrapper {
@@ -16,4 +17,135 @@
   font-size: clamp(1.75rem, 1.5500rem + 1.0000vw, 2.75rem);
   font-weight: 600;
   line-height: 60px;
+}
+
+.leftText {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.leftText img {
+  width: 12px;
+  height: 21px;
+}
+
+.leftImg {
+  margin-top: 8px;
+}
+
+.inputWithImg {
+  position: relative;
+}
+
+.inputText::placeholder {
+  color: #000000;
+}
+
+.inputImg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.listStatement {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.listStatement ul li {
+  opacity: 71%;
+}
+
+.rightImageContainer {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.rightImageContainer img {
+  max-width: 100%;
+}
+
+
+.imageLayer0,
+.imageLayer1,
+.imageLayer2 {
+  position: absolute;
+  left: 50%;
+}
+
+.imageLayer2 {
+  transform: translateX(20%);
+  margin-top: 85px;
+}
+
+.imageCaption {
+  /* float: right; */
+  padding-right: 250px;
+  text-align: end;
+  margin-top: 40px;
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .herosectionInnerWrapper {
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .imageLayer0,
+  .imageLayer1,
+  .imageLayer2 {
+    left: 10%;
+  }
+
+  .imageLayer2 img,
+  .imageLayer0 img,
+  .imageLayer1 img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+  .rightImageContainer img {
+    max-width: 100%;
+  }
+
+  .imageLayer0,
+  .imageLayer1 {
+    width: 280px;
+  }
+
+  .imageLayer2 {
+    width: 180px;
+    top: 88.5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .imageLayer2 {
+    top: 90.75%;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .imageLayer2 {
+    top: 89.75%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .imageLayer2 {
+    top: 88.75%;
+  }
 }

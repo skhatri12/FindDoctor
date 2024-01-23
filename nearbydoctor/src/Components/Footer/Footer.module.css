@@ -1,0 +1,14 @@
+.footerSection {
+  background-color: #738CE2AD;
+}
+
+.footerWrapper {
+  padding: 20px 10px 40px 50px;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 5px;
+}

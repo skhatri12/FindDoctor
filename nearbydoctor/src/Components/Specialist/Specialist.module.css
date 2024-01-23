@@ -1,0 +1,45 @@
+.specialHeader {
+  margin-top: 40px;
+}
+
+.specialContainer {
+  background-color: #D1D6E0;
+  padding-top: 20px;
+}
+
+.specialWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 30px 50px 30px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+}
+
+.specialList {
+  background-color: #D1D6E0;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lists h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+.lists p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 2px;
+}
