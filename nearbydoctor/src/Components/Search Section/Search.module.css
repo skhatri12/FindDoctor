@@ -75,11 +75,13 @@
 
 .departList {
   background-color: #DCE3F3;
-  padding-top: 5px;
+  display: flex;
+  align-items: center;
   border-radius: 10px;
   text-align: center;
   font-weight: 600;
   width: 100%;
+  justify-content: center;
 }
 
 .secondWrapper {
