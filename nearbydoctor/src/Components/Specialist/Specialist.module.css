@@ -1,5 +1,6 @@
 .specialHeader {
-  margin-top: 40px;
+  margin-top: 90px;
+  padding-bottom: 10px;
 }
 
 .specialContainer {
@@ -43,3 +44,9 @@ h3 {
   line-height: 15px;
   margin-top: 2px;
 }
+
+/* @media screen and (max-width: 768px) {
+  .specialHeader {
+    padding-top: 210px;
+  }
+} */

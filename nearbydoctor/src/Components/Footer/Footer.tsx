@@ -10,7 +10,7 @@ const Footer = () => {
         </Heading>
         <div className={styles.footerInfo} >
           <Text fontSize='md' as='b' >email: youremail@gmail.com</Text>
-          <Text fontSize='md' as='b'>mobile: +91 98xxxxxxxx10</Text>
+          <Text fontSize='md' as='b'>mobile: +91 98xxxxxx10</Text>
         </div>
       </div>
 

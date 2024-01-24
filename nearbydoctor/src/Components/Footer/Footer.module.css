@@ -3,6 +3,8 @@
 }
 
 .footerWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
   padding: 20px 10px 40px 50px;
 }
 
