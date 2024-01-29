@@ -1,23 +1,5 @@
-.innernavbarWrapper {
-  padding: 20px 100px 10px 120px;
-}
-
-.navList {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: end;
-}
-
 .hamburgerMenu {
   display: none;
-}
-
-.menuItem span {
-  font-size: clamp(1rem, 0.9500rem + 0.2500vw, 1.25rem);
-  font-weight: 600;
 }
 
 .navBtn Button {

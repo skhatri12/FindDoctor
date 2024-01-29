@@ -1,45 +1,17 @@
-.topheroInnerWrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  padding: 70px 50px 30px 60px;
-  justify-content: space-between;
-  gap: 10px;
-
-}
-
-.leftHeroWrapper {
-  max-width: 350px;
-}
-
-.leftText {
-  display: flex;
-  gap: 10px;
-  margin-top: 25px;
-}
-
-.leftImg {
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
-}
-
 .inputText::placeholder {
   color: #000000;
   font-weight: 500;
 }
 
-
-
-.inputwithImg .inputText {
+/* .inputwithImg .inputText {
   width: fit-content;
-}
+} */
 
-.listStatement {
+/* .listStatement {
   padding-left: 30px;
   padding-right: 0;
   padding-top: 15px;
-}
+} */
 
 .listStatement ul li {
   opacity: 81%;

@@ -1,45 +1,45 @@
 import styles from './Specialist.module.css'
-import { SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 const Specialist = () => {
   return (
     <>
-      <div className={styles.specialHeader} >
-        <h3>Search by Specialist</h3>
-      </div>
+      <Box className={styles.specialHeader} >
+        <Heading className={styles.heading} >Search by Specialist</Heading>
+      </Box>
 
-      <div className={styles.specialContainer} >
-        <div className={styles.specialWrapper} >
-          <div className={styles.specialList} >
+      <Box className={styles.specialContainer} >
+        <Box className={styles.specialWrapper} >
+          <Box className={styles.specialList} >
             <SimpleGrid minChildWidth='120px' spacing='40px'>
-              <div className={styles.lists} >
+              <Box className={styles.lists} >
                 <Image src='./assets/Rectangle 17.png' alt='specialist' className={styles.imageGroup} />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Heading size='sm'>Dr: Name Name</Heading>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists} >
+              <Box className={styles.lists} >
                 <Image src='./assets/Rectangle 18.png' alt='specialist' className={styles.imageGroup} />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Heading size='sm'>Dr: Name Name</Heading>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists} >
+              <Box className={styles.lists} >
                 <Image src='./assets/Rectangle 19.png' alt='specialist' className={styles.imageGroup} />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Heading size='sm'>Dr: Name Name</Heading>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists} >
+              <Box className={styles.lists} >
                 <Image src='./assets/Rectangle 20.png' alt='specialist' className={styles.imageGroup} />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Heading size='sm'>Dr: Name Name</Heading>
+                <Text>Doctor degree name</Text>
+              </Box>
 
             </SimpleGrid>
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
     </>
   )
 }

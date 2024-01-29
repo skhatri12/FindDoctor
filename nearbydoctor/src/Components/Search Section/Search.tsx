@@ -1,44 +1,71 @@
-import styles from './Search.module.css'
-import { Button } from '@chakra-ui/react'
+import styles from "./Search.module.css";
+import { Box, Button, Input, Image, Text } from "@chakra-ui/react";
 const list = ["Dentist", "Cardiologist", "Dermatologist", "Family Physicians"];
 const Search = () => {
   return (
-    <div className={styles.searchWrapper} >
-      <div className={styles.firstWrapper} >
-        <div className={styles.topSearch} >
-          <div className={styles.searchSection} >
-            <img src="./assets/search.png" alt="search" />
-            <input type="text" placeholder='Search by Doctors' className={styles.inputText} />
-          </div>
-          <div className={styles.locationSection} >
-            <img src="./assets/Location.png" alt="location" />
-            <input type="text" placeholder='Search by Location' className={styles.inputText} />
-          </div>
-          <div className={styles.wsearchSection} >
-            <img src="./assets/wsearch.png" alt="search" />
-          </div>
-        </div>
-        <div className={styles.sectionText} >
-          <p>You may be looking for</p>
-        </div>
-        <div className={styles.bottomSearch} >
+    <Box
+      className={styles.searchWrapper}
+      display="flex"
+      px="30px"
+      w="100%"
+      maxW="1300px"
+      m="0 auto"
+      justifyContent="center"
+    >
+      <Box
+        className={styles.firstWrapper}
+        bgColor="#6E9CC7"
+        p="30px"
+        paddingLeft=" clamp(3rem, 2.3500rem + 3.2500vw, 6.25rem)"
+        borderRadius="10px"
+        flex="1"
+        maxW="100%"
+        height="fit-content"
+        mt="50px"
+      >
+        <Box className={styles.topSearch} gap='20px' justifyContent='space-between'>
+          <Box className={styles.searchSection}>
+            <Image src="./assets/search.png" alt="search" />
+            <Input
+              type="text"
+              placeholder="Search by Doctors"
+              className={styles.inputText}
+            />
+          </Box>
+          <Box className={styles.locationSection}>
+            <Image src="./assets/Location.png" alt="location" />
+            <Input
+              type="text"
+              placeholder="Search by Location"
+              className={styles.inputText}
+            />
+          </Box>
+          <Box className={styles.wsearchSection} >
+            <Image src="./assets/wsearch.png" alt="search" />
+          </Box>
+        </Box>
+        <Box className={styles.sectionText}>
+          <Text>You may be looking for</Text>
+        </Box>
+        <Box className={styles.bottomSearch}>
           {list.map((item, index) => (
-            <div className={styles.departList} key={index} >
+            <Box className={styles.departList} key={index}>
               {item}
-            </div>
+            </Box>
           ))}
-          <Button bg='#08337DBA' color='white'>More</Button>
-        </div>
-      </div>
-      <div className={styles.secondWrapper} >
-        <img src="./assets/ellipse.png" alt="ellipse" />
-        <div className={styles.secondImgWrapper} >
-          <img src="./assets/first.png" alt="image" />
-        </div>
-      </div>
-    </div>
+          <Button bg="#08337DBA" color="white">
+            More
+          </Button>
+        </Box>
+      </Box>
+      <Box className={styles.secondWrapper}>
+        <Image src="./assets/ellipse.png" alt="ellipse" />
+        <Box className={styles.secondImgWrapper}>
+          <Image src="./assets/first.png" alt="image" />
+        </Box>
+      </Box>
+    </Box>
+  );
+};
 
-  )
-}
-
-export default Search
+export default Search;
